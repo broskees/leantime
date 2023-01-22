@@ -103,7 +103,10 @@ class ApiSession
                 'scope',
                 'state',
                 'redirect_uri',
-                'code'
+                'code',
+                'state',
+                'response_type',
+                'prompt'
             ];
 
             if (!self::checkCreds($requiredCreds, $creds, $optionalCreds)) {
